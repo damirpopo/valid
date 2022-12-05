@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ok">
+            <div class="title">
+            <h1>Регистрация</h1><br>
+            <p>создайте учётную запись</p>
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                {% if field.errors %}
+                <div class="error">{{form.errors}}</div>
+                {% endif %}
+                {{form.name}}<br>
+                {{ form.password }}<br>
+                <input type="submit" value="Вохд" >
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>

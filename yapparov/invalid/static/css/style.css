@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: cornflowerblue;
+    height: 969px;
+    width: 1919px;
+}
+.ok{
+    margin-left: 944px;
+}
+.pol{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    margin: 10px 10px 10px 0;
+}
+.title{
+    margin-bottom: 20px;
+    
+}
